@@ -1,5 +1,5 @@
 {
-  "name": "worker-homepage",
+  "name": "homepage",
   "compatibility_date": "2025-07-15",
   "assets": {
     "directory": "./dist"
