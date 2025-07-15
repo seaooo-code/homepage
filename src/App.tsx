@@ -46,14 +46,14 @@ export default function App() {
 		{
 			title: "项目作品",
 			description: "展示我的开源项目和作品",
-			url: "https://github.com/username",
+			url: "https://github.com/seaooo-code",
 			icon: <Code className="w-6 h-6" />,
 			color: "from-green-500 to-emerald-500",
 		},
 		{
 			title: "GitHub",
 			description: "查看我的代码仓库",
-			url: "https://github.com/username",
+			url: "https://github.com/seaooo-code",
 			icon: <div className="i-tabler-brand-github w-6 h-6" />,
 			color: "from-gray-500 to-slate-500",
 		},
