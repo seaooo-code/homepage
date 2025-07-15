@@ -1,13 +1,13 @@
 {
-  "name": "homepage",
-  "compatibility_date": "2022-07-12",
-  "routes": [
-    {
-      "pattern": "homepage.seaooo.com",
-      "custom_domain": true
-    }
-  ],
-  "assets": {
-    "directory": "./dist"
-  }
+	"name": "homepage",
+	"compatibility_date": "2025-07-15",
+	"routes": [
+		{
+			"pattern": "homepage.seaooo.com",
+			"custom_domain": true
+		}
+	],
+	"assets": {
+		"directory": "./dist"
+	}
 }
