@@ -4,14 +4,13 @@
  */
 
 import {
-	Code,
-	ExternalLink,
-	FileText,
-	Heart,
-	Mail,
-	Star,
-	User,
-} from "lucide-react";
+	IconArticle,
+	IconBrandGithub,
+	IconBriefcase,
+	IconHeart,
+	IconMail,
+	IconUser,
+} from "@tabler/icons-react";
 import type { ReactNode } from "react";
 
 interface NavigationItem {
@@ -33,42 +32,42 @@ export default function App() {
 			title: "个人简历",
 			description: "了解我的专业经历和技能",
 			url: "https://resume.seaooo.com",
-			icon: <User className="w-6 h-6" />,
+			icon: <IconUser className="w-8 h-8" />,
 			color: "from-blue-500 to-cyan-500",
 		},
 		{
 			title: "技术博客",
 			description: "分享技术文章和学习心得",
 			url: "https://example.com/blog",
-			icon: <FileText className="w-6 h-6" />,
+			icon: <IconArticle className="w-8 h-8" />,
 			color: "from-purple-500 to-pink-500",
 		},
 		{
 			title: "项目作品",
 			description: "展示我的开源项目和作品",
 			url: "https://github.com/seaooo-code",
-			icon: <Code className="w-6 h-6" />,
+			icon: <IconBrandGithub className="w-8 h-8" />,
 			color: "from-green-500 to-emerald-500",
 		},
 		{
 			title: "GitHub",
 			description: "查看我的代码仓库",
 			url: "https://github.com/seaooo-code",
-			icon: <div className="i-tabler-brand-github w-6 h-6" />,
+			icon: <IconBrandGithub className="w-8 h-8" />,
 			color: "from-gray-500 to-slate-500",
 		},
 		{
 			title: "联系我",
 			description: "通过邮件与我取得联系",
 			url: "mailto:chenhui.yang@seaooo.com",
-			icon: <Mail className="w-6 h-6" />,
+			icon: <IconMail className="w-8 h-8" />,
 			color: "from-orange-500 to-red-500",
 		},
 		{
 			title: "个人作品集",
 			description: "设计作品和创意项目",
 			url: "https://example.com/portfolio",
-			icon: <Star className="w-6 h-6" />,
+			icon: <IconBriefcase className="w-8 h-8" />,
 			color: "from-yellow-500 to-amber-500",
 		},
 	];
@@ -95,9 +94,9 @@ export default function App() {
 				{/* 页面标题 */}
 				<div className="text-center mb-16">
 					<div className="inline-flex items-center justify-center w-20 h-20 bg-white/10 backdrop-blur-md rounded-full border border-white/20 mb-6">
-						<Heart className="w-8 h-8 text-pink-400" />
+						<IconHeart className="w-8 h-8 text-pink-400" />
 					</div>
-					<h1 className="text-4xl md:text-6xl font-bold text-white mb-4 bg-gradient-to-r from-white via-blue-200 to-purple-200 bg-clip-text text-transparent">
+					<h1 className="text-4xl md:text-6xl font-bold text-white mb-4 bg-gradient-to-r from-white via-blue-200 to-purple-200 bg-clip-text">
 						个人导航中心
 					</h1>
 					<p className="text-xl text-gray-300 max-w-2xl mx-auto">
@@ -139,7 +138,7 @@ export default function App() {
 
 									{/* 外部链接图标 */}
 									<div className="flex items-center text-gray-500 group-hover:text-blue-400 transition-colors duration-300">
-										<ExternalLink className="w-4 h-4 mr-1" />
+										<span className="icon-[tabler--external-link] w-4 h-4 mr-1"></span>
 										<span className="text-sm">打开链接</span>
 									</div>
 								</div>
@@ -155,8 +154,9 @@ export default function App() {
 				<div className="text-center mt-16">
 					<div className="inline-flex items-center justify-center px-6 py-3 bg-white/10 backdrop-blur-md rounded-full border border-white/20">
 						<span className="text-gray-300 text-sm">
-							Made with <Heart className="w-4 h-4 text-pink-400 inline mx-1" />{" "}
-							by Your Name
+							Made with{" "}
+							<IconHeart className="w-4 h-4 text-pink-400 inline mx-1" /> by
+							Your Name
 						</span>
 					</div>
 				</div>
