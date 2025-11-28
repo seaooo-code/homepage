@@ -1,0 +1,68 @@
+<svg
+        width="64"
+        height="64"
+        viewBox="0 0 64 64"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+>
+    <!-- 背景圆角方块 -->
+    <rect
+            x="4"
+            y="4"
+            width="56"
+            height="56"
+            rx="16"
+            fill="url(#bg-grad)"
+    />
+
+    <!-- 中央字母标记 -->
+    <text
+            x="50%"
+            y="50%"
+            text-anchor="middle"
+            dominant-baseline="central"
+            font-family="system-ui, -apple-system, BlinkMacSystemFont, 'SF Pro Text', 'Segoe UI', sans-serif"
+            font-size="28"
+            font-weight="600"
+            fill="white"
+    >
+        Y
+    </text>
+
+    <!-- 轻微高光圈，增加一点层次 -->
+    <circle
+            cx="32"
+            cy="32"
+            r="22"
+            fill="url(#glow-grad)"
+            opacity="0.18"
+    />
+
+    <defs>
+        <!-- 背景渐变：上深下稍亮 -->
+        <linearGradient
+                id="bg-grad"
+                x1="0"
+                y1="0"
+                x2="0"
+                y2="64"
+                gradientUnits="userSpaceOnUse"
+        >
+            <stop offset="0%" stop-color="#020617"/>
+            <stop offset="100%" stop-color="#111827"/>
+        </linearGradient>
+
+        <!-- 内圈渐变光 -->
+        <radialGradient
+                id="glow-grad"
+                cx="0"
+                cy="0"
+                r="1"
+                gradientUnits="userSpaceOnUse"
+                gradientTransform="translate(32 24) rotate(90) scale(26)"
+        >
+            <stop offset="0%" stop-color="#FFFFFF"/>
+            <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0"/>
+        </radialGradient>
+    </defs>
+</svg>
